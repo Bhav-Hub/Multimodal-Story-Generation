@@ -4,6 +4,8 @@
 
 This project implements an AI-powered storytelling pipeline that creates immersive narratives with accompanying illustrations from minimal user input. The system uses a LangGraph-based directed workflow to orchestrate the story generation, validation, image creation, and compilation processes.
 
+
+
 ## Features
 
 - **Story Generation from Simple Prompts**: Transform brief user inputs into rich, coherent narratives
@@ -24,6 +26,15 @@ The project uses a LangGraph workflow with the following components:
 5. **Image Generation**: Creates illustrations using Stable Diffusion
 6. **Image Validation**: Verifies image-prompt alignment and regenerates if needed 
 7. **PDF Compilation**: Formats and combines story text and images into a polished document
+
+
+
+## Workflow
+
+The project uses a LangGraph workflow with conditional processing:
+
+![Workflow Graph](WorkflowGraph.png)
+
 
 ## Requirements
 
@@ -64,7 +75,7 @@ pillow
    ```
 4. The compiled story will be saved as `compiled_story.pdf`
 
-## Example Output
+## Output
 
 The system will generate:
 - A structured story with beginning, middle, and end
